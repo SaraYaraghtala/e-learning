@@ -23,16 +23,16 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="/Profile">
+          <Link href="/profile">
             <Typography>Profile</Typography>
           </Link>
         </li>
       </ul>
 
       <div className={scss.buttonMenu}>
-        <Button variant="contained" >Sign in</Button>
-        <Button variant="contained" href="/Logout">Sign out</Button>
-        <Button variant="contained">Register</Button>
+        <Button variant="contained" href="/login" >Sign in</Button>
+        <Button variant="contained" href="/logout">Sign out</Button>
+        <Button variant="contained" href="/register">Register</Button>
       </div>
     </header>
   );
