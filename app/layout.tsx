@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import Header from "./components/Header";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const darkTheme = createTheme({
+const lightTheme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
   },
 });
 
@@ -22,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ background: "black", color: "white" }}>
-        <ThemeProvider theme={darkTheme}>
+      <body style={{ background: "white", color: "black" }}>
+        <ThemeProvider theme={lightTheme}>
           <Header />
 
           {children}
